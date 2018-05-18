@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_496a5e8780074cccb4f2c452acdb134a {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_496a5e8780074cccb4f2c452acdb134a" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_496a5e8780074cccb4f2c452acdb134a = L.map(
+                                  'map_496a5e8780074cccb4f2c452acdb134a',
+                                  {center: [51.02,40.2718],
+                                  zoom: 3,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_940d1da5df7a4b7e8555025c3e59f4a6 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_496a5e8780074cccb4f2c452acdb134a);
+        
+    
+            var feature_group_058954439d0941debbd9cd1f814dc4bc = L.featureGroup(
+                ).addTo(map_496a5e8780074cccb4f2c452acdb134a);
+        
+    
+
+            var marker_9675b29351274d9aa695bb30266d0923 = L.marker(
+                [51.416,0.754],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_058954439d0941debbd9cd1f814dc4bc);
+            
+    
+
+                var icon_3b7967fe5e3e490c9221cdcb4f3a2e55 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9675b29351274d9aa695bb30266d0923.setIcon(icon_3b7967fe5e3e490c9221cdcb4f3a2e55);
+            
+    
+            var popup_0f9a8642382e4962b5c41a3cd4a67732 = L.popup({maxWidth: '300'});
+
+            
+                var html_6a8b45ff82ad4ebf9aa1495fac2df5ce = $('<div id="html_6a8b45ff82ad4ebf9aa1495fac2df5ce" style="width: 100.0%; height: 100.0%;">Bracknell</div>')[0];
+                popup_0f9a8642382e4962b5c41a3cd4a67732.setContent(html_6a8b45ff82ad4ebf9aa1495fac2df5ce);
+            
+
+            marker_9675b29351274d9aa695bb30266d0923.bindPopup(popup_0f9a8642382e4962b5c41a3cd4a67732);
+
+            
+        
+    
+
+            var marker_d04011332a28456cac294699c78a47b7 = L.marker(
+                [12.9716,77.5946],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_058954439d0941debbd9cd1f814dc4bc);
+            
+    
+
+                var icon_37c23540fafc438e8539284e35d33de3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d04011332a28456cac294699c78a47b7.setIcon(icon_37c23540fafc438e8539284e35d33de3);
+            
+    
+            var popup_d7a4c3db502449738434ef15b85b7bea = L.popup({maxWidth: '300'});
+
+            
+                var html_625a38665d8f4c32abdd0ce1391f7433 = $('<div id="html_625a38665d8f4c32abdd0ce1391f7433" style="width: 100.0%; height: 100.0%;">Bangalore</div>')[0];
+                popup_d7a4c3db502449738434ef15b85b7bea.setContent(html_625a38665d8f4c32abdd0ce1391f7433);
+            
+
+            marker_d04011332a28456cac294699c78a47b7.bindPopup(popup_d7a4c3db502449738434ef15b85b7bea);
+
+            
+        
+    
+                var poly_line_79ed045d78b248319e90f320297604cc = L.polyline(
+                    [[51.416, 0.754], [12.9716, 77.5946]],
+                    {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "red",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "noClip": false,
+  "opacity": 1,
+  "smoothFactor": 1.0,
+  "stroke": true,
+  "weight": 2.5
+}).addTo(feature_group_058954439d0941debbd9cd1f814dc4bc);
+            
+    
+            var popup_bc0832e9997b428db580016f3b462125 = L.popup({maxWidth: '300'});
+
+            
+                var html_af0d39fceb5b4f60af59b77c35284702 = $('<div id="html_af0d39fceb5b4f60af59b77c35284702" style="width: 100.0%; height: 100.0%;">bandwith -10g</div>')[0];
+                popup_bc0832e9997b428db580016f3b462125.setContent(html_af0d39fceb5b4f60af59b77c35284702);
+            
+
+            poly_line_79ed045d78b248319e90f320297604cc.bindPopup(popup_bc0832e9997b428db580016f3b462125);
+
+            
+        
+</script>
